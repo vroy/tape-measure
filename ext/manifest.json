@@ -1,0 +1,19 @@
+{
+	"name": "Tape Measure",
+	"version": "0.1",
+	"description": "Tape Measure allows you to easily measure anything in a web page. Alt+click and move to start a ruler.",
+
+	"content_scripts": [{
+		"all_frames": true,
+		"matches": [ "<all_urls>" ],
+		"js": [ "jquery-1.6.2.min.js", "tape-measure.js" ],
+		"css": [ "tape-measure.css" ],
+		"run_at": "document_end"
+	}],
+
+	"icons": {
+		"128": "logo-128.png",
+		"48": "logo-48.png"
+	}
+
+}
