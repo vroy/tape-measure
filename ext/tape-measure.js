@@ -6,9 +6,10 @@ $(document).ready(function() {
 
 	// Start a ruler resize on mousedown of a handle.
 	$("body .ruler-container .handle").live("mousedown", function(e) {
+		e.preventDefault();
 		e.stopPropagation();
 		e.stopImmediatePropagation();
-
+		
 		var handle_name = $(this).clone().removeClass("handle").attr("class");
 
 		var ruler = $("body .ruler-container .ruler");
@@ -28,6 +29,7 @@ $(document).ready(function() {
 
 	// On mousedown with the "alt key" pressed, initialize a ruler that will be resized on mousemove.
 	$(document).mousedown(function(e) {
+		e.preventDefault();
 		if (e.altKey) {
 			// Log where we started building 
 			$start_x = e.pageX;
