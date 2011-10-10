@@ -1,6 +1,6 @@
 {
 	"name": "Tape Measure",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Tape Measure is a chrome extension that allows you to easily measure anything in a web page. Alt+click and move to start a ruler. Alt+click somewhere else without moving to remove ruler.",
 
 	"content_scripts": [{

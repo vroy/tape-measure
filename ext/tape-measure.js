@@ -29,8 +29,9 @@ $(document).ready(function() {
 
 	// On mousedown with the "alt key" pressed, initialize a ruler that will be resized on mousemove.
 	$(document).mousedown(function(e) {
-		e.preventDefault();
 		if (e.altKey) {
+			e.preventDefault();
+
 			// Log where we started building 
 			$start_x = e.pageX;
 			$start_y = e.pageY;
